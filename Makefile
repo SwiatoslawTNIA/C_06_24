@@ -17,11 +17,11 @@ vpath %.h headers
 %.o: %.c
 	$(COMPILE.C) $(OUTPUT_OPTION) $<
 
-run: c
-	./c
+run: strings
+	./strings
 
-c: c.o
-c.o:c.h
+strings: strings.o
+strings.o: strings.h
 .INTERMEDIATE: *.o
 
 .PHONY: depend #Now the file will be updated each time it is called.
