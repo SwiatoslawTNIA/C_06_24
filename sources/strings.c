@@ -15,6 +15,7 @@
 // #error Something
 void testing(void);
 void clocks(void);
+void time_part(void);
 //---------------------------------------------------------------------------------------------------------------------
 ///
 /// This is an example header comment. Here, you explain, what the
@@ -68,3 +69,7 @@ void clocks(void)
   // assert(0);//if the value of the assertion is nonzero, it's alright, else it's wrong.
   printf("Time used to print using the printf() method: %lf",( clock() - clock_time_2 ) / (double)CLOCKS_PER_SEC);
 } 
+void time_part(void)
+{
+
+}
