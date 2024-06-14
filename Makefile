@@ -17,8 +17,11 @@ vpath %.h headers
 %.o: %.c
 	$(COMPILE.C) $(OUTPUT_OPTION) $<
 
-run: search_funcs
-	valgrind ./search_funcs
+run: pseudo_rand
+	valgrind ./pseudo_rand
+
+pseudo_rand: pseudo_rand.o 
+pseudo_rand.o: pseudo_rand.c 
 search_funcs: search_funcs.o 
 search_funcs.o: search_funcs.c 
 strings: strings.o
